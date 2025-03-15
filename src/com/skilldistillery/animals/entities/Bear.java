@@ -2,14 +2,17 @@ package com.skilldistillery.animals.entities;
 //Subclass//Subclass
 public class Bear extends Animal {
 
-	private String Noise; 
+	private String noise = "growl"; ; 
 	
-	private String makeNoise() {
-		return null;
+	@Override
+	public void makeNoise() {
+		System.out.println(noise);
 	}
 	
-	private int eat(int amount) {
-		return 0;
+	@Override
+	public void eat(int amount) {
+		makeNoise(); 
+		System.out.println("yum");
 	}
 	
 }

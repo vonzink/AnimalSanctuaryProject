@@ -3,10 +3,10 @@ package com.skilldistillery.animals.entities;
 public class Sanctuary {
 
 	
-	private String[] Animal = new String[7];
+	private Animal[] animal = new Animal[5];
 	private Attendant attendant; 
 	
-	Sanctuary sanctuary = new Sanctuary();
+	
 	
 	
 }

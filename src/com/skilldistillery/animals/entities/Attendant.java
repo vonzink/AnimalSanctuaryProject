@@ -1,16 +1,11 @@
 package com.skilldistillery.animals.entities;
 //Subclass
-public class Attendant extends Sanctuary{
+public class Attendant{
 
-	private int count = 0; 
-	
-	Attendant attendant = new Attendant(); 
-	
-	public Attendant() {}  
 	
 	
-	public int makeRounds(int count) {
-		return this.count; 
+	public void makeRounds(Animal[] animals) {
+		
 
 		}	//Makes Rounds Array of Animals return void
 	}

@@ -5,18 +5,21 @@ import com.skilldistillery.animals.entities.*;
 
 public class AnimalSanctuaryApp {
 
-	Sanctuary sanctuary; 
+	Sanctuary sanctuary; //TODO Instantiate a Sanctuary
+	Attendant attendant; //TODO Instantiate an Attendant
 	
 	public static void main(String[] args) {
 
+		//TODO Add attendant to sanctuary
+		Attendant attendant = new Attendant();
 		
 		AnimalSanctuaryApp app = new AnimalSanctuaryApp();
 		app.launchApp(); 
-		
+	}
+//TODO Tell sanctuary to start attendant rounds
 		private void launchApp() {
 			System.out.println("");
-		}
-	}
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println(" Welcome to the Sanctuary Database "); 
 		System.out.println(" Welcome to the Sanctuary Database ");
@@ -27,8 +30,5 @@ public class AnimalSanctuaryApp {
 	}
 
 }
-//TODO Instantiate a Sanctuary
-//TODO Instantiate an Attendant
-//TODO Add attendant to sanctuary
+
 //TODO Create and add animals to sanctuary
-//TODO Tell sanctuary to start attendant rounds

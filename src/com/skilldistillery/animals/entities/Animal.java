@@ -13,10 +13,19 @@ public class Animal {
 	public Animal(String name) {
 		super();
 		this.name = name;
+		System.out.println("Animal created: " + this.name);
 	}
 
 	public static Animal[] getAnimals() {
-			return null;
+			return new Animal[] {
+					new Bear(), 
+					new Gorilla() , 
+					new Dragon(), 
+					new Cow(),
+					new Bird(), 
+					new Duck(),
+					new Lion(),
+			};
 		}
 	public String getName() {return name;} //Method 1
 	public void setName(String name) {this.name = name;}
@@ -46,6 +55,5 @@ public class Animal {
 		System.out.println(0); 
 
 	}
-	}
-
+}
 

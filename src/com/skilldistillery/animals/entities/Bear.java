@@ -1,18 +1,36 @@
 package com.skilldistillery.animals.entities;
-//Subclass//Subclass
+//Animal subclass
 public class Bear extends Animal {
 
-	private String noise = "growl"; ; 
+	
+	private static String noise = "growl"; 
+	private static String eat = "nom, nom, nom";
+	private static  int feedTimesPerDay = 1; 
+	private static String foodType = "Salmon"; 	
+	private static boolean aggressive = true; 
+	
+
 	
 	@Override
 	public void makeNoise() {
 		System.out.println(noise);
 	}
-	
 	@Override
 	public void eat(int amount) {
 		makeNoise(); 
-		System.out.println("yum");
+		System.out.println(eat);
 	}
-	
+	@Override
+	public void feedTimePerDay() {
+		System.out.println(feedTimesPerDay);
+		
+	}
+	@Override
+	public void foodType() {
+		System.out.println(foodType);
+	}
+	@Override
+	public void aggressive() {
+		System.out.println(aggressive);
+	}
 }

@@ -1,29 +1,51 @@
 package com.skilldistillery.animals.entities;
 //Subclass
 
-public class Animal extends Sanctuary {
+public class Animal {
 
-	private String name;
+	private String name; //Animal - Fields - name
 
-	public Animal() {}; 
+
+	public Animal() {
+		super();
+	}
 	
 	public Animal(String name) {
+		super();
 		this.name = name;
 	}
 
-	public void makeNoise() {
+	public static Animal[] getAnimals() {
+			return null;
+		}
+	public String getName() {return name;} //Method 1
+	public void setName(String name) {this.name = name;}
+
+	public void makeNoise() { //Method 2
+		System.out.println(name + ""); 
+	}
+	public void eat(int amount) { //Method 3
+		System.out.println(name + "I'm eating" + amount + " foods");
+	}
 	
+	public void feedTimesPerDay() {
+		System.out.println(0); 	
 	}
 
-	public void eat(int amount) {
+	public void foodType() {
+		System.out.println(""); 
+		
 	}
 
-	public String getName() {
-		return name;
+	public void aggressive(){
+		System.out.println(false); 
+		
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void feedTimePerDay() {
+		System.out.println(0); 
+
+	}
 	}
 
-}
+

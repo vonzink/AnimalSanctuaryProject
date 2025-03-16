@@ -1,7 +1,7 @@
 package com.skilldistillery.animals.entities;
 
 public class Sanctuary {
-	private Animal[] animals = new Animal[7];
+	private Animal[] animals = new Animal[8];
 	private Attendant attendant;
 
 	public Animal[] getAnimals() {

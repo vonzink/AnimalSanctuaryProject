@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class AnimalSanctuaryApp {
 
 	private Sanctuary sanctuary = new Sanctuary();
-	private AnimalSanctuaryApp animalSanctuaryApp;
 	private Scanner sc = new Scanner(System.in);
 
 	public AnimalSanctuaryApp() {
@@ -16,10 +15,8 @@ public class AnimalSanctuaryApp {
 	public Sanctuary getSanctuary() {
 		return sanctuary;
 	}
-
 	public void setSanctuary(Sanctuary sanctuary) {
 		this.sanctuary = sanctuary;
-
 	}
 
 	public void launchApp() {
@@ -109,10 +106,16 @@ public class AnimalSanctuaryApp {
 		sc.close(); 
 	}
 // MAIN
-
+	
+	
+	
+	
+	
+	
 public static void main(String[] args) {
 
 AnimalSanctuaryApp app = new AnimalSanctuaryApp();	
 	app.launchApp();
 }
+
 }

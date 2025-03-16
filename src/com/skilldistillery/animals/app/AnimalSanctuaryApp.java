@@ -49,6 +49,7 @@ public class AnimalSanctuaryApp {
 					int theChoice = species();
 					nameAnimal(theChoice);
 					break;
+					
 				case 3:
 					this.getSanctuary().startAttendantRounds();
 					break;
@@ -84,30 +85,45 @@ public class AnimalSanctuaryApp {
 
 	String nameAnimal(int choice) {
 
-		System.out.println("what is the name of the animal? ");
+		System.out.println("what is the animals name? ");
 		String name = sc.nextLine();
 
 		switch (choice) {
 		case 1:
 			this.getSanctuary().addAnimal(new Bear(name));
+			System.out.println(name +  " the Bear has been added to the Sanctuary");
+
 			break;
 		case 2:
 			this.getSanctuary().addAnimal(new Bird(name));
+			System.out.println(name +  " the Bird has been added to the Sanctuary");
+		
 			break;
 		case 3:
 			this.getSanctuary().addAnimal(new Cow(name));
+			System.out.println(name +  " the Cow has been added to the Sanctuary");
+		
 			break;
 		case 4:
 			this.getSanctuary().addAnimal(new Dragon(name));
+			System.out.println(name +  " the Dragon has been added to the Sanctuary");
+			
 			break;
 		case 5:
 			this.getSanctuary().addAnimal(new Duck(name));
+			System.out.println(name +  " the Duck has been added to the Sanctuary");
+			
 			break;
 		case 6:
 			this.getSanctuary().addAnimal(new Gorilla(name));
+			System.out.println(name +  " the Gorilla has been added to the Sanctuary");
+			
 			break;
 		case 7:
 			this.getSanctuary().addAnimal(new Lion(name));
+			System.out.println(name +  " the Lion has been added to the Sanctuary");
+			
+			
 			break;
 		}
 		return name;

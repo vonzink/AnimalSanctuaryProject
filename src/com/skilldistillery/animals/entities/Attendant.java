@@ -2,26 +2,30 @@ package com.skilldistillery.animals.entities;
 
 public class Attendant {
 
-	
+	private int foodAmount;
+
+	//Eclipse
 	 public Attendant() {
 		super();
 	}
+	 //Eclipse
 	public Attendant(int foodAmount) {
 		super();
 		this.foodAmount = foodAmount;
 	}
+	//Eclipse
 	public int getFoodAmount() {
 		return foodAmount;
 	}
+	//Eclipse
 	public void setFoodAmount(int foodAmount) {
 		this.foodAmount = foodAmount;
 	}
-	int foodAmount = (int)(Math.random() * 10) + 1; 
-
     public void makeRounds(Animal[] animals) {
-    	System.out.println("I love Animals.");
-        for (int i = 1; i < animals.length; i++) {
+    	System.out.println("I love taking care of animals!.");
+        for (int i = 0; i < animals.length; i++) {
             if (animals[i] != null) { 
+            	int foodAmount = (int)(Math.random() * 10) + 1; 
                 System.out.println("I will feed " + animals[i].getName() + " " + foodAmount + " foods");
                 animals[i].makeNoise();
                 animals[i].eat(foodAmount);

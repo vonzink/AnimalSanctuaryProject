@@ -3,12 +3,12 @@ package com.skilldistillery.animals.entities;
 public class Gorilla  extends Animal{
 
 	//Animal subclass	
-	private static String noise = "Moo";
-
+	private static String noise = "Woo Woo";
+	//Eclipse
 	public Gorilla() {
 		super();
 	}
-
+	//Eclipse
 	public Gorilla(String name) {
 		super(name);
 	}
@@ -20,6 +20,6 @@ public class Gorilla  extends Animal{
 
 	@Override
 	public void eat(int amount) {
-		System.out.println("I love eating these " + amount + " hays.");
+		System.out.println("I love eating these " + amount + " bananas.");
 	}
 }

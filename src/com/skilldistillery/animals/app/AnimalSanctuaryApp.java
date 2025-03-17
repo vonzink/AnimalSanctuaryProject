@@ -13,20 +13,13 @@ public class AnimalSanctuaryApp {
 		return sanctuary;
 	}
 	
-	public void setSanctuary(Sanctuary sanctuary) {
-		this.sanctuary = sanctuary;
-	}
-	
-	public AnimalSanctuaryApp() {
-	}
-	
 	public void launchApp() {
 
 		System.out.println("** Welcome to my animal Sanctuary **");
 		int answer;
 		do {
 			System.out.println("--------------------------------------");
-			System.out.println("Please select an option");
+			System.out.println("Please select an option 1 thru 4");
 			System.out.println("--------------------------------------");
 			System.out.println("1. Get a list of Animals ");
 			System.out.println("2. Add a New Animal");
@@ -52,8 +45,8 @@ public class AnimalSanctuaryApp {
 					
 				case 3:
 					this.getSanctuary().startAttendantRounds();
-					break;
-
+					break; 
+					
 				case 4:
 					System.out.println("Goodbye");
 					break;
@@ -82,80 +75,52 @@ public class AnimalSanctuaryApp {
 
 		return species;
 	}
-
+			
 	String nameAnimal(int choice) {
-
+				
+		
 		System.out.println("what is the animals name? ");
-		String name = sc.nextLine();
-
-		switch (choice) {
-		case 1:
-			this.getSanctuary().addAnimal(new Bear(name));
-			System.out.println(name +  " the Bear has been added to the Sanctuary");
-
-			break;
-		case 2:
-			this.getSanctuary().addAnimal(new Bird(name));
-			System.out.println(name +  " the Bird has been added to the Sanctuary");
+		String name = sc.nextLine();		
 		
-			break;
-		case 3:
-			this.getSanctuary().addAnimal(new Cow(name));
-			System.out.println(name +  " the Cow has been added to the Sanctuary");
 		
-			break;
-		case 4:
-			this.getSanctuary().addAnimal(new Dragon(name));
-			System.out.println(name +  " the Dragon has been added to the Sanctuary");
-			
-			break;
-		case 5:
-			this.getSanctuary().addAnimal(new Duck(name));
-			System.out.println(name +  " the Duck has been added to the Sanctuary");
-			
-			break;
-		case 6:
-			this.getSanctuary().addAnimal(new Gorilla(name));
-			System.out.println(name +  " the Gorilla has been added to the Sanctuary");
-			
-			break;
-		case 7:
-			this.getSanctuary().addAnimal(new Lion(name));
-			System.out.println(name +  " the Lion has been added to the Sanctuary");
-			
-			
-			break;
-		}
-		return name;
-	}
+			switch (choice) {
+			case 1:
+				this.getSanctuary().addAnimal(new Bear(name));
+				System.out.println(name +  " the Bear has been added to Sanctuary");
 	
-
+				break;
+			case 2:
+				this.getSanctuary().addAnimal(new Bird(name));
+				System.out.println(name +  " the Bird has been added to Sanctuary ");
+				break;
+			case 3:
+				this.getSanctuary().addAnimal(new Cow(name));
+				System.out.println(name +  " the Cow has been added to Sanctuary ");
+				break;
+			case 4:
+				this.getSanctuary().addAnimal(new Dragon(name));
+				System.out.println(name +  " the Dragon has been added to Sanctuary");
+				break;
+			case 5:
+				this.getSanctuary().addAnimal(new Duck(name));
+				System.out.println(name +  " the Duck has been added to the Sanctuary");
+				break;
+			case 6:
+				this.getSanctuary().addAnimal(new Gorilla(name));
+				System.out.println(name +  " the Gorilla has been added to the Sanctuary");
+				break;
+			case 7:
+				this.getSanctuary().addAnimal(new Lion(name));
+				System.out.println(name +  " the Lion has been added to the Sanctuary ");
+				break;
+			}	return name;		
+		}
 //MAIN	
 
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("AnimalSanctuaryApp [sanctuary=");
-		builder.append(sanctuary);
-		builder.append(", sc=");
-		builder.append(sc);
-		builder.append(", getSanctuary()=");
-		builder.append(getSanctuary());
-		builder.append(", species()=");
-		builder.append(species());
-		builder.append(", getClass()=");
-		builder.append(getClass());
-		builder.append(", hashCode()=");
-		builder.append(hashCode());
-		builder.append(", toString()=");
-		builder.append(super.toString());
-		builder.append("]");
-		return builder.toString();
-	}
-
 	public static void main(String[] args) {
-
 		AnimalSanctuaryApp app = new AnimalSanctuaryApp();
 		app.launchApp();
+
+
 	}
 }

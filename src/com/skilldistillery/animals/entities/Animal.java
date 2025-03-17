@@ -2,19 +2,15 @@ package com.skilldistillery.animals.entities;
 
 public class Animal {
     private String name; 
-
+    
+  //Eclipse
     public Animal() {
-		super();
 	}
-
+  //Eclipse
 	public String getName() { 
 		return name;
 	}
-
-	public void setName(String name) { 
-		this.name = name;
-	}
-
+	//Eclipse
 	public Animal(String name) { 
 		super();
 		this.name = name;

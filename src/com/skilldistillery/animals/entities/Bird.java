@@ -3,12 +3,13 @@ package com.skilldistillery.animals.entities;
 
 public class Bird extends Animal{
 
-	private static String noise = "Moo"; 
+	private static String noise = "Churp"; 
 	
+	//Eclipse
 	public Bird() {
 		super();
 	}
-	
+	//Eclipse
 	public Bird(String name) {
         super(name);
     }
@@ -20,7 +21,7 @@ public class Bird extends Animal{
 
     @Override
     public void eat(int amount) {
-        System.out.println("I love eating these " + amount + " hays.");
+        System.out.println("I love eating these " + amount + " seed.");
         
     	}
     }

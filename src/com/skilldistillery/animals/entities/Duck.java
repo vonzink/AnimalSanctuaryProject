@@ -1,12 +1,12 @@
 package com.skilldistillery.animals.entities;
 //Animal subclass
 public class Duck extends Animal {
-	private static String noise = "Moo";
-
+	private static String noise = "Quack";
+	//Eclipse
 	public Duck() {
 		super();
 	}
-
+	//Eclipse
 	public Duck(String name) {
 		super(name);
 	}
@@ -18,6 +18,6 @@ public class Duck extends Animal {
 
 	@Override
 	public void eat(int amount) {
-		System.out.println("I love eating these " + amount + " hays.");
+		System.out.println("I love eating these " + amount + " portions of bread.");
 	}
 }
